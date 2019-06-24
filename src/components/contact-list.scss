@@ -1,0 +1,68 @@
+
+$base_background: #D7DADD;
+$border_color: #ccc;
+
+.header-class {
+    background: #f6f6f6;
+    position: sticky;
+    top: 0;
+}
+
+th { /* Chrome hack */
+    background: #f6f6f6;
+    position: sticky;
+    top: 0;
+}
+
+th:focus{
+    outline: none;
+}
+
+.header-class:focus {
+    outline: none;
+}
+
+.infoCl {
+    background: $base_background;
+    padding: 10px;
+}
+
+
+.icon-info{
+    @extend .infoCl;
+    h3 {
+        color: green;
+    }
+}
+
+.icon-warning{
+    @extend .infoCl;
+    h3 {
+        color: #D9B60D;
+    }
+}
+
+.icon-error{
+    @extend .infoCl;
+    h3 {
+        color: red;
+    }
+}
+
+.mainContainer {
+    display: block;
+    width: 80%;
+    height: 90%;
+    border: 1px $border_color dashed;
+
+    .react-bootstrap-table {
+        border: 1px #f6f6f6 dashed;
+        background: $base_background;
+        padding: 10px;
+    }
+
+    .table-bordered td {
+        border: 1px $border_color dashed;
+    }
+}
+
